@@ -10,9 +10,8 @@ pipeline {
 
         stage('Clone') {
             steps {
-                echo 'Cloning repository...'
+                checkout scm
             }
-            checkout scm
         }
 
         stage('Build Docker Image') {
