@@ -12,6 +12,7 @@ pipeline {
             steps {
                 echo 'Cloning repository...'
             }
+            checkout scm
         }
 
         stage('Build Docker Image') {
